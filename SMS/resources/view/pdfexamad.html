@@ -1,0 +1,26 @@
+<?php
+	ob_start();
+?>
+<?php
+	require_once("../../public/student_session.php");
+	require_once("../../public/connection.php");
+	require_once("../../public/functions.php");
+	//require_once("staff_dashboard_processor.php");
+?>
+<?php
+    if(!isset($_SESSION['student'])){
+        exit('STOP DOING THAT');
+    }
+?>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Examination Info </title>
+  </head>
+  <body>
+    <h1>Dear Student Read Carefully About Your Examination..................................................</h1>
+    <p>Class Test Instruction / Class Assigment Instruction <a href="file:///C:/xampp/htdocs/Rise%20School/School132/SMS/resources/view/pdfexm/pxm.pdf">Click Here to Open</a>.</p>
+	<p>Half Yearly Exam / MTE Examination Instruction <a href="file:///C:/xampp/htdocs/Rise%20School/School132/SMS/resources/view/pdfexm/pxm.pdf">Click Here to Open</a>.</p>
+	<p>Yearly Exam / ETE Examination Instruction <a href="file:///C:/xampp/htdocs/Rise%20School/School132/SMS/resources/view/pdfexm/pxm.pdf">Click Here to Open</a>.</p>
+  </body>
+</html>
